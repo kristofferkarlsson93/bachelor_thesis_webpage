@@ -1,0 +1,218 @@
+html, body{
+
+    overflow-x: hidden;
+}
+
+@keyframes dropHeader {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+#header {
+    height: 100vh;
+    width: 105vw;
+    text-align: center;
+    animation: 1s ease-out 0s 1 dropHeader;
+    color: White;
+    background: #2782db;
+    background: -webkit-radial-gradient(#6aaced, #2782db); /* Safari 5.1 to 6.0 */
+    background: -o-radial-gradient(#4e9ae5, #2782db); /* For Opera 11.6 to 12.0 */
+    background: -moz-radial-gradient(#4e9ae5, #2782db); /* For Firefox 3.6 to 15 */
+    background: radial-gradient(#4e9ae5, #2782db); /* Standard syntax */
+}
+
+/*nav {
+    width: 25%;
+    margin-left: 75%;
+    border-radius: 25px;
+}*/
+
+.menu {
+    border-radius: 10px;
+    margin-top: 1%;
+    overflow: hidden;
+
+    z-index: 100;
+    position: fixed;
+    top: 0;
+    margin-left: 89%;
+}
+.menu a {
+    width: 100%;
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    background-color: black;
+    opacity: 0.5;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    font-size: 17px;
+}
+
+.menu a:hover {
+    opacity: 1;
+}
+#headerText {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%)
+}
+
+.page {
+    height: 135vh;
+    width: 102vw;
+    text-align: center;
+}
+.pageContent {
+    margin-top: 5%;
+}
+
+#about {
+    background-color: White;
+    background: -webkit-radial-gradient(white, #cecece); /* Safari 5.1 to 6.0 */
+    background: -o-radial-gradient(white, #cecece); /* For Opera 11.6 to 12.0 */
+    background: -moz-radial-gradient(white, #cecece); /* For Firefox 3.6 to 15 */
+    background: radial-gradient(white, #cecece); /* Standard syntax */
+}
+#about h3, h4 {
+    text-align: center;
+}
+
+#aboutText {
+    margin: 5% 2% 0% 5%;
+    text-align: justify
+}
+
+.text {
+    line-height: 180%;
+}
+#aboutImageDiv {
+    text-align: center;
+    width: 55%;
+    margin-top: 5%;
+}
+
+#aboutImage {
+    border-radius: 25px;
+    width: 50%;
+    height: auto;
+    margin: 0 auto;
+}
+
+#works {
+    color: white;
+    background: #2782db;
+    background: -webkit-radial-gradient(#6aaced, #2782db); /* Safari 5.1 to 6.0 */
+    background: -o-radial-gradient(#4e9ae5, #2782db); /* For Opera 11.6 to 12.0 */
+    background: -moz-radial-gradient(#4e9ae5, #2782db); /* For Firefox 3.6 to 15 */
+    background: radial-gradient(#4e9ae5, #2782db); /* Standard syntax */
+}
+
+#worksImageDiv {
+    margin-top: 5%;
+    margin-left: 3%;
+    width: 50%;
+    border-radius: 25px;
+    background-color:rgba(255,255,255,0.4);
+}
+
+#worksImage {
+    width: 60%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+#worksText {
+    margin-top: 5%;
+    margin-left: 0px;
+    margin-right: 10%;
+    text-align: justify;
+    float: right;
+}
+
+#developers {
+    background-color: white;/*#ffd700;*/
+    background: -webkit-radial-gradient(white, #cecece); /* Safari 5.1 to 6.0 */
+    background: -o-radial-gradient(white, #cecece); /* For Opera 11.6 to 12.0 */
+    background: -moz-radial-gradient(white, #cecece); /* For Firefox 3.6 to 15 */
+    background: radial-gradient(white, #cecece); /* Standard syntax */
+}
+
+#developersContent {
+    text-align: center;
+}
+
+.profile {
+    text-align: center;
+    margin: 5%;
+}
+#kristofferImageDiv {
+    margin: 10%;
+}
+
+#kristofferImageDiv h4 {
+    float: left;
+    margin-left: 8%;
+}
+
+#kristofferImage {
+    width: 52%
+}
+
+#arvidImageDiv {
+    float: right;
+    margin-top: 8%;
+}
+
+#arvidImageDiv h4 {
+    float: left;
+    margin-left: 15%;
+}
+#arvidImage {
+    width: 58%;
+
+
+}
+
+@media only screen and (max-width: 768px) {
+    .menu {
+        display: none;
+    }
+    #aboutImageDiv {
+        width: 100%;
+    }
+    #worksImageDiv {
+        width: auto;
+    }
+    #worksImage {
+        width: auto;
+        margin: 0 auto;
+        text-align: center;
+    }
+    #worksText {
+        margin: 5%;
+    }
+    #kristofferImageDiv h4 {
+        margin-left: -30px;
+    }
+    #kristofferImage {
+        margin: 0  auto;
+    }
+    #kristofferImageDiv h4 {
+        margin: 0 auto;
+        float: none;
+    }
+    #arvidImage {
+        margin: 0  auto;
+    }
+    #arvidImageDiv h4 {
+        margin: 0 auto;
+        float: none;
+    }
+}

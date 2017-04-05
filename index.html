@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Inavicon</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+          integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="media/favicon.ico" type="image/x-icon">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+            crossorigin="anonymous"></script>
+    <script src="js/scroll.js"></script>
+    <meta property="og:title" content="Icon based indoor navigation" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://karlssonkristoffer.com/bachelor_thesis/" />
+    <meta property="og:description" content="A bachelor thesis looking in to a new concept of navigation" />
+    <meta property="og:image" content="http://karlssonkristoffer.com/bachelor_thesis/media/mapping.jpg" />
+
+</head>
+<body>
+    <div id="header" class="row">
+        <div id="navigation" class="row">
+            <div class="menu">
+                <a class="menuItem" href="#header">Home</a><br>
+                <a class="menuItem" href="#about">About the project</a><br>
+                <a class="menuItem" href="#works">How it works</a><br>
+                <a class="menuItem" href="#developers">Developers</a>
+            </div>
+        </div>
+        <div id="headerText" class="col center-block">
+            <h1>Bachelor Thesis in Cognitive Science</h1>
+            <h2>Icon based indoor navigation</h2>
+            <h3>Inavicon</h3>
+            <p>Webpage under construction</p>
+        </div>
+    </div>
+    <div id="about" class="row page">
+        <div id="aboutContent" class="pageContent">
+            <h3>What is this project about?</h3>
+            <div id="aboutText" class="col-md-4 text">
+                <h4>The fault with navigation aids of today</h4>
+                <p>Reasearch has shown that we are getting worse at navigating when using tools like Google Maps. One major
+                reason for this is that we do not pay enough attention to the environment. Instead we are looking at
+                our dot on a small screen and follows that. We do not interact with our surroundings. <br>
+                There is also a hype on indoor navigation. But the solutions today uses the same interface as
+                outdoor-services. This will leave us with the same problem.
+                </p>
+                <h4>The solution?</h4>
+                <p>In this project we will develop a indoor navigation app where the user is presented with a set of icons
+                that will guid the user between checkpoints to their goal. This will force interaction with the
+                surroundings In the same time as it is useful</p>
+            </div>
+            <div id="aboutImageDiv" class="col-md-8">
+                <figure>
+                    <img id="aboutImage" src="media/mapping.jpg" class="img-responsive">
+                    <figcaption>A picture of the data-collection to map a building</figcaption>
+                </figure>
+            </div>
+        </div>
+    </div>
+    <div id="works" class="row page">
+        <div id="worksContent" class="pageContent">
+            <h3>How does it work?</h3>
+            <div id="worksImageDiv" class="col-md-8">
+                <img id="worksImage" src="media/using.png" class="img-responsive">
+            </div>
+            <div id="worksText" class="col-md-4 text">
+                <p>The app will run on an Android device and present icons for the user to follow. Each icon represents
+                a place or a thing in the real world that the user has to pass to find his or her destination.
+                To accomplish this we are using IndoorAtlas to map up a building. IndoorAtlas uses radio waves,
+                magnetic fields, acoustic signals and other sensory information collected by a smartphone device to
+                finger print positions indoors. By using these fingerprints we later can determine the position of the
+                user. <br> We also uses Proximios services for adding Geofences. Geofences is basically a area on a
+                map that we have marked out that when entered, triggers an event in the users phone. </p>
+            </div>
+        </div>
+    </div>
+    <div id="developers" class="row page">
+        <div id="developersContent" class="pageContent">
+            <h3>Who develops it?</h3>
+            <div id="kristofferImageDiv" class="col-md-4 profile">
+                <img id="kristofferImage" src="media/kristoffer.jpg" class="img-responsive img-circle profileImage">
+                <h4>Kristoffer Karlsson</h4>
+            </div>
+            <div id="arvidImageDiv" class="col-md-4 profile">
+                <img id="arvidImage" src="media/arvid2.jpg" class="img-responsive img-circle profileImage">
+                <h4>Arvid Horned</h4>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
