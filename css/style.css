@@ -14,7 +14,9 @@ html, body{
 
 #header {
     height: 100vh;
-    width: 105vw;
+    max-height: 100vh;
+    min-height: 100vh;
+    width: 100vw;
     text-align: center;
     animation: 1s ease-out 0s 1 dropHeader;
     color: White;
@@ -25,17 +27,10 @@ html, body{
     background: radial-gradient(#4e9ae5, #2782db); /* Standard syntax */
 }
 
-/*nav {
-    width: 25%;
-    margin-left: 75%;
-    border-radius: 25px;
-}*/
-
 .menu {
     border-radius: 10px;
     margin-top: 1%;
     overflow: hidden;
-
     z-index: 100;
     position: fixed;
     top: 0;
@@ -46,8 +41,6 @@ html, body{
     float: left;
     display: block;
     color: #000;
-    /*color: #f2f2f2;*/
-    /*background-color: black;*/
     opacity: 0.7;
     padding: 14px 16px;
     text-decoration: none;
@@ -61,23 +54,42 @@ html, body{
     text-decoration: underline;
 }
 
-.current {
-    font-weight: bold;
-}
-
-#arrow {
-    display: none;
-    width: 105%;
-    position: absolute;
-    bottom: 0;
-    margin: 0 auto;
-    text-align: center;
-}
-
 #arrowImage {
-    width: 15%;
-    height: auto;
-    color: white;
+    bottom: 10%;
+    text-align: center;
+    font-size: 550%;
+    color: black;
+    opacity: 0.4;
+    filter: alpha(opacity=40); /* For IE8 and earlier */
+}
+
+#arrowLink {
+    margin-left: -3%;
+    position: absolute;
+    bottom: 10%;
+}
+@keyframes dropArrow {
+    from {
+        bottom: 10%;
+    }
+    to {
+        bottom: 7%;
+    }
+}
+
+#arrowImage:hover {
+    opacity: 0.7;
+    filter: alpha(opacity=70); /* For IE8 and earlier */
+}
+
+#arrowLink:hover {
+    -webkit-animation-name: dropArrow;
+    -moz-animation-name: dropArrow;
+    -o-animation-name: dropArrow;
+    animation-name: dropArrow;
+    animation-duration: 1s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
 }
 
 #headerText {
@@ -93,6 +105,7 @@ html, body{
 }
 .pageContent {
     margin-top: 5%;
+    margin-bottom: -1%;
 }
 
 #about {
@@ -199,13 +212,60 @@ html, body{
 }
 #arvidImage {
     width: 58%;
-
-
+}
+#git {
+    text-align: center;
+    margin-top: -10%;
+}
+#gitImage {
+    opacity: 0.5;
+    margin: 0 auto;
 }
 
-@media only screen and (max-width: 768px) {
+@keyframes gitJump {
+    from {
+        margin-top: 0%;
+    }
+    to {
+        margin-top: -1%;
+    }
+}
+
+#gitImage:hover {
+    opacity: 1;
+    -webkit-animation-name: gitJump;
+    -moz-animation-name: gitJump;
+    -o-animation-name: gitJump;
+    animation-name: gitJump;
+    animation-duration: 0.5s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+@media only screen and (max-width: 767px) {
+    #header {
+        margin-left: 0%;
+    }
+    #navigation {
+        display: none;
+    }
     .menu {
         display: none;
+    }
+    #headerText {
+        top:35%;
+    }
+    #arrowImage {
+        width: 0%;
+        height: 0%;
+        display: none;
+    }
+    #arrowLink {
+        width: 0%;
+        height: 0%;
+        display: none;
+    }
+    #about {
+        height: 150vh;
     }
     #aboutImageDiv {
         width: 100%;
@@ -238,4 +298,67 @@ html, body{
         margin: 0 auto;
         float: none;
     }
+    #git {
+        margin-top: 5%;
+    }
+    .animated {
+        /*CSS transitions*/
+        -o-transition-property: none !important;
+        -moz-transition-property: none !important;
+        -ms-transition-property: none !important;
+        -webkit-transition-property: none !important;
+        transition-property: none !important;
+        /*CSS transforms*/
+        -o-transform: none !important;
+        -moz-transform: none !important;
+        -ms-transform: none !important;
+        -webkit-transform: none !important;
+        transform: none !important;
+        /*CSS animations*/
+        -webkit-animation: none !important;
+        -moz-animation: none !important;
+        -o-animation: none !important;
+        -ms-animation: none !important;
+        animation: none !important;
+    }
+    * {
+        -o-transition-property: none !important;
+        -moz-transition-property: none !important;
+        -ms-transition-property: none !important;
+        -webkit-transition-property: none !important;
+        transition-property: none !important;
+        /*CSS transforms*/
+        -o-transform: none !important;
+        -moz-transform: none !important;
+        -ms-transform: none !important;
+        -webkit-transform: none !important;
+        transform: none !important;
+        /*CSS animations*/
+        -webkit-animation: none !important;
+        -moz-animation: none !important;
+        -o-animation: none !important;
+        -ms-animation: none !important;
+        animation: none !important;
+    }
+    *:hover {
+        -o-transition-property: none !important;
+        -moz-transition-property: none !important;
+        -ms-transition-property: none !important;
+        -webkit-transition-property: none !important;
+        transition-property: none !important;
+        /*CSS transforms*/
+        -o-transform: none !important;
+        -moz-transform: none !important;
+        -ms-transform: none !important;
+        -webkit-transform: none !important;
+        transform: none !important;
+        /*CSS animations*/
+        -webkit-animation: none !important;
+        -moz-animation: none !important;
+        -o-animation: none !important;
+        -ms-animation: none !important;
+        animation: none !important;
+
+    }
+
 }

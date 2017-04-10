@@ -14,7 +14,6 @@
           integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="media/favicon.ico" type="image/x-icon">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
@@ -30,7 +29,7 @@
 
 </head>
 <body>
-    <div id="header" class="row">
+    <div id="header" class="row animated">
         <div id="navigation" class="row">
             <div class="menu">
                 <a id="firstMenuItem" class="menuItem" href="#header">Home</a><br>
@@ -44,12 +43,11 @@
             <h2>Icon based indoor navigation</h2>
             <h3>Inavicon</h3>
         </div>
-        <div id="arrow" class="row">
-            <img id="arrowImage" src="media/down-arrow.png">
-        </div>
+        <a id="arrowLink" class="menuItem animated" href="#about">
+            <span id="arrowImage" class="glyphicon glyphicon-menu-down"></span></a>
     </div>
     <div id="about" class="row page">
-        <div id="aboutContent" class="pageContent">
+        <div id="aboutContent" class="pageContent row">
             <h3>What is this project about?</h3>
             <div id="aboutText" class="col-md-4 text">
                 <h4>The fault with navigation aids of today</h4>
@@ -61,19 +59,19 @@
                 </p>
                 <h4>The solution?</h4>
                 <p>In this project we will develop a indoor navigation app where the users are presented with a set of icons
-                that will guide them between checkpoints, to their goal. This will force interaction with the
-                surroundings In the same time as it is useful</p>
+                that will guide them between checkpoints to their goal. This will force interaction with the
+                surroundings in a easy way</p>
             </div>
             <div id="aboutImageDiv" class="col-md-8">
                 <figure>
                     <img id="aboutImage" src="media/mapping.jpg" class="img-responsive">
                     <figcaption>A picture of the data-collection to map a building</figcaption>
                 </figure>
-            </div>
+            </div><br>
         </div>
     </div>
     <div id="works" class="row page">
-        <div id="worksContent" class="pageContent">
+        <div id="worksContent" class="pageContent row">
             <h3>How does it work?</h3>
             <div id="worksImageDiv" class="col-md-8">
                 <img id="worksImage" src="media/using.png" class="img-responsive">
@@ -91,7 +89,7 @@
         </div>
     </div>
     <div id="developers" class="row page">
-        <div id="developersContent" class="pageContent">
+        <div id="developersContent" class="pageContent row">
             <h3>Who develops it?</h3>
             <div id="kristofferImageDiv" class="col-md-4 profile">
                 <img id="kristofferImage" src="media/kristoffer.jpg" class="img-responsive img-circle profileImage">
@@ -100,6 +98,14 @@
             <div id="arvidImageDiv" class="col-md-4 profile">
                 <img id="arvidImage" src="media/arvid2.jpg" class="img-responsive img-circle profileImage">
                 <h4>Arvid Horned</h4>
+            </div>
+            <div id="contacts" class="row">
+                <div id="git" class="col-md-12">
+                    <h3>View the code</h3>
+                    <a href="https://github.com/kristofferkarlsson93/Inavicon">
+                        <img id="gitImage" class="img-responsive animated" src="media/GitHub-Mark-120px-plus.png">
+                    </a>
+                </div>
             </div>
         </div>
     </div>
