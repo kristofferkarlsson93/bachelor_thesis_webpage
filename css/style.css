@@ -64,9 +64,10 @@ html, body{
 }
 
 #arrowLink {
-    margin-left: -3%;
+    margin-left: -27px;
     position: absolute;
     bottom: 10%;
+
 }
 @keyframes dropArrow {
     from {
@@ -99,13 +100,10 @@ html, body{
 }
 
 .page {
-    height: 135vh;
-    width: 102vw;
     text-align: center;
 }
 .pageContent {
     margin-top: 5%;
-    margin-bottom: -1%;
 }
 
 #about {
@@ -141,6 +139,7 @@ html, body{
 }
 
 #works {
+    height: auto;
     color: white;
     background: #2782db;
     background: -webkit-radial-gradient(#6aaced, #2782db); /* Safari 5.1 to 6.0 */
@@ -170,6 +169,15 @@ html, body{
     margin-right: 15%;
     text-align: justify;
     float: right;
+}
+#video {
+    margin-top: 30%;
+    margin-bottom: 5%;
+}
+
+#videoFrame {
+    margin: 0 auto;
+    text-align: center;
 }
 
 #developers {
@@ -265,7 +273,7 @@ html, body{
         display: none;
     }
     #about {
-        height: 150vh;
+       /* height: 150vh;*/
     }
     #aboutImageDiv {
         width: 100%;
@@ -281,6 +289,12 @@ html, body{
     #worksText {
         margin: 5%;
     }
+
+    iframe {
+        width: 350px;
+        height: 225px;
+    }
+
     #kristofferImageDiv h4 {
         margin-left: -30px;
     }
