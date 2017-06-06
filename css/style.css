@@ -129,6 +129,7 @@ html, body{
     text-align: center;
     width: 55%;
     margin-top: 5%;
+    margin-bottom: 5%;
 }
 
 #aboutImage {
@@ -224,30 +225,15 @@ html, body{
 #git {
     text-align: center;
     margin-top: -10%;
+    margin-bottom: 5%;
 }
 #gitImage {
     opacity: 0.5;
     margin: 0 auto;
 }
 
-@keyframes gitJump {
-    from {
-        margin-top: 0%;
-    }
-    to {
-        margin-top: -1%;
-    }
-}
-
 #gitImage:hover {
     opacity: 1;
-    -webkit-animation-name: gitJump;
-    -moz-animation-name: gitJump;
-    -o-animation-name: gitJump;
-    animation-name: gitJump;
-    animation-duration: 0.5s;
-    animation-direction: alternate;
-    animation-iteration-count: infinite;
 }
 @media only screen and (max-width: 767px) {
     #header {
@@ -272,6 +258,9 @@ html, body{
         height: 0%;
         display: none;
     }
+    .pageContent {
+        margin: 3%;
+    }
     #about {
        /* height: 150vh;*/
     }
@@ -280,6 +269,7 @@ html, body{
     }
     #worksImageDiv {
         width: auto;
+        margin-left: auto;
     }
     #worksImage {
         width: auto;
