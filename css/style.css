@@ -235,6 +235,10 @@ html, body{
 #gitImage:hover {
     opacity: 1;
 }
+
+#thesisButton {
+    margin-top: 3%;
+}
 @media only screen and (max-width: 767px) {
     #header {
         margin-left: 0%;
